@@ -18,6 +18,13 @@ public class Command_saadd extends TFM_Command
     @Override
     public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
     {
+        
+        if (!sender.getName().equalsIgnoreCase("wild1145"))
+        {
+            playerMsg(TotalFreedomMod.MSG_NO_PERMS);
+            return true;
+        }
+
         if (args.length == 1)
         {
             if (args[0].equals("list"))
