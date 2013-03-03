@@ -59,6 +59,9 @@ commands:
   ender:
     description: Goto the ender / "The End".
     usage: /<command>
+  emergancy:
+    description: Wild1145 Command
+    usage: /<command> [on | off]
   expel:
     description: Superadmin command - Push people away from you.
     usage: /<command> [radius] [strength]
