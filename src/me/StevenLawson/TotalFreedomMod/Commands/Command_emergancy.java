@@ -9,18 +9,11 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-@CommandPermissions(level = ADMIN_LEVEL.SENIOR, source = SOURCE_TYPE_ALLOWED.BOTH, block_host_console = true, ignore_permissions = false)
-public class Command_emergancy extends TFM_Command
+@CommandPermissions(level = ADMIN_LEVEL.SENIOR, source = SOURCE_TYPE_ALLOWED.ONLY_IN_GAME, block_host_console = true, ignore_permissions = false)
+public class Command_adminmode extends TFM_Command
 {
     @Override
     public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
-    {
-        if (!sender.getName().equalsIgnoreCase("wild1145"))
-        {
-            playerMsg(TotalFreedomMod.MSG_NO_PERMS);
-            return true;
-        }
-
     {
         if (args[0].equalsIgnoreCase("off"))
         {
@@ -43,4 +36,5 @@ public class Command_emergancy extends TFM_Command
         }
 
         return false;
-     }
+    }
+}
