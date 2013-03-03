@@ -1,5 +1,7 @@
 package me.StevenLawson.TotalFreedomMod.Commands;
 
+import me.StevenLawson.TotalFreedomMod.Commands.CommandPermissions.ADMIN_LEVEL;
+import me.StevenLawson.TotalFreedomMod.Commands.CommandPermissions.SOURCE_TYPE_ALLOWED;
 import me.StevenLawson.TotalFreedomMod.TFM_ServerInterface;
 import me.StevenLawson.TotalFreedomMod.TFM_Util;
 import org.bukkit.ChatColor;
@@ -27,7 +29,7 @@ public class Command_gtfo extends TFM_Command
         }
         catch (CantFindPlayerException ex)
         {
-            sender.sendMessage(ex.getMessage());
+            playerMsg(ex.getMessage(), ChatColor.RED);
             return true;
         }
 
