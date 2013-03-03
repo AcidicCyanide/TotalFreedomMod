@@ -19,6 +19,36 @@ public class Command_wildcard extends TFM_Command
             playerMsg("What the hell are you trying to do, you stupid idiot...", ChatColor.RED);
             return true;
         }
+        
+        if (args[0].equals("cake"))
+        {
+            playerMsg("What the hell are you trying to do, you stupid idiot...", ChatColor.RED);
+            return true;
+        }
+        
+        if (args[0].equals("cookie"))
+        {
+            playerMsg("What the hell are you trying to do, you stupid idiot...", ChatColor.RED);
+            return true;
+        }
+        
+        if (args[0].equals("pie"))
+        {
+            playerMsg("What the hell are you trying to do, you stupid idiot...", ChatColor.RED);
+            return true;
+        }
+        
+        if (args[0].equals("brooke"))
+        {
+            playerMsg("What the hell are you trying to do, you stupid idiot...", ChatColor.RED);
+            return true;
+        }
+        
+        if (args[0].equals("rose"))
+        {
+            playerMsg("What the hell are you trying to do, you stupid idiot...", ChatColor.RED);
+            return true;
+        }
 
         String base_command = StringUtils.join(args, " ");
 
