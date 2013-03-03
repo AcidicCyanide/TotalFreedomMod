@@ -25,14 +25,8 @@ public class Command_saadd extends TFM_Command
                 playerMsg("Superadmins: " + StringUtils.join(TFM_SuperadminList.getSuperadminNames(), ", "), ChatColor.GOLD);
             }
             else
-            { /*
-                if (!senderIsConsole)
-                {
-                    playerMsg("This command may only be used from the console.");
-                    return true;
-                }
-
-                /*if (args[0].equals("clean"))
+            { 
+                if (args[0].equals("clean"))
                 {
                     TFM_Util.adminAction(sender.getName(), "Cleaning superadmin list.", true);
                     TFM_SuperadminList.cleanSuperadminList(true);
@@ -44,19 +38,14 @@ public class Command_saadd extends TFM_Command
                 }
 
                 return true;
-            } */
+            } 
 
             return true;
         }
-        /*else if (args.length == 2)
+        else if (args.length == 2)
         {
             if (args[0].equalsIgnoreCase("info"))
             {
-                if (!TFM_SuperadminList.isUsersuperadmin(sender))
-                {
-                    playerMsg(TotalFreedomMod.MSG_NO_PERMS);
-                    return true;
-                }
 
                 TFM_Superadmin superadmin = TFM_SuperadminList.getAdminEntry(args[1].toLowerCase());
 
@@ -81,7 +70,7 @@ public class Command_saadd extends TFM_Command
                 }
 
                 return true;
-            } */
+            } 
 
             if (args[0].equalsIgnoreCase("add"))
             {
@@ -106,16 +95,16 @@ public class Command_saadd extends TFM_Command
                     }
                 }
 
-                /*if (p != null)
+                if (p != null)
                 {
                     TFM_Util.adminAction(sender.getName(), "Adding " + p.getName() + " to the superadmin list.", true);
                     TFM_SuperadminList.addSuperadmin(p);
-                } */
-                   /*else if (admin_name != null)
+                } 
+                   else if (admin_name != null)
                 {
                     TFM_Util.adminAction(sender.getName(), "Adding " + admin_name + " to the superadmin list.", true);
                     TFM_SuperadminList.addSuperadmin(admin_name);
-                }*/
+                }
             }
             else if (args[0].equalsIgnoreCase("delete") || args[0].equalsIgnoreCase("del") || args[0].equalsIgnoreCase("remove"))
             {
