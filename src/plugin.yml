@@ -56,6 +56,9 @@ commands:
   enchant:
     description: Enchant items.
     usage: /<command> <list | addall | reset | add <name> | remove <name>>
+  ender:
+    description: Goto the ender / "The End".
+    usage: /<command>
   expel:
     description: Superadmin command - Push people away from you.
     usage: /<command> [radius] [strength]
@@ -214,9 +217,6 @@ commands:
   smite:
     description: Superadmin Command - Someone being a little bitch? Smite them down...
     usage: /<command> [playername]
-  ender:
-    description: Goto the ender / "The End".
-    usage: /<command>
   sonlinemode:
     description: Senior Command - What it does is of no concern to you!
     usage: /<command> <on | off>
