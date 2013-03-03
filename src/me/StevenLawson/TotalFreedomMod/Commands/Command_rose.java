@@ -21,7 +21,7 @@ public class Command_rose extends TFM_Command
         StringBuilder output = new StringBuilder();
         Random randomGenerator = new Random();
 
-        String[] words = TotalFreedomMod.CAKE_LYRICS.replaceAll("cake", "rose").split(" ");
+        String[] words = TotalFreedomMod.CAKE_LYRICS.replaceAll("cake", "rose's").split(" ");
         for (String word : words)
         {
             String color_code = Integer.toHexString(1 + randomGenerator.nextInt(14));
