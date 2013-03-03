@@ -1,7 +1,5 @@
 package me.StevenLawson.TotalFreedomMod.Commands;
 
-import me.StevenLawson.TotalFreedomMod.Commands.CommandPermissions.ADMIN_LEVEL;
-import me.StevenLawson.TotalFreedomMod.Commands.CommandPermissions.SOURCE_TYPE_ALLOWED;
 import me.StevenLawson.TotalFreedomMod.TFM_ServerInterface;
 import me.StevenLawson.TotalFreedomMod.TFM_Util;
 import org.bukkit.ChatColor;
@@ -29,7 +27,7 @@ public class Command_gtfo extends TFM_Command
         }
         catch (CantFindPlayerException ex)
         {
-            playerMsg(ex.getMessage(), ChatColor.RED);
+            sender.sendMessage(ex.getMessage());
             return true;
         }
 
@@ -38,19 +36,14 @@ public class Command_gtfo extends TFM_Command
         //Undo WorldEdits:
         if (senderIsConsole)
         {
-            server.dispatchCommand(sender, String.format("wildcard gcmd ? /undo %d %s ", 15, p.getName()));
         }
         else
         {
             server.dispatchCommand(sender, String.format("/undo %d %s", 15, p.getName()));
-            server.dispatchCommand(sender, String.format("rollback %s %d", 9999, p.getName()));
         }
 
         // deop
         p.setOp(false);
-        
-        //Rollback
-        server.dispatchCommand(sender, String.format("rollback %s %d", 9999, p.getName()));
 
         // set gamemode to survival:
         p.setGameMode(GameMode.SURVIVAL);
@@ -83,7 +76,7 @@ public class Command_gtfo extends TFM_Command
         TFM_ServerInterface.banUsername(p.getName(), null, null, null);
 
         // kick Player:
-        p.kickPlayer("GTFO Appeal At http://forum.thecjgcjg.com");
+        p.kickPlayer("GTFO");
 
         return true;
     }
