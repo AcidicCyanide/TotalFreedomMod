@@ -80,6 +80,9 @@ commands:
   fluidspread:
     description: Superadmin command - Enable/disable fluid spread.
     usage: /<command> <on | off>
+  food:
+    description: SeniorAdmin Command - Gives everyone the lot of food!
+    usage: /<Command>
   fr:
     description: Superadmin command - Freeze players (toggles on and off).
     usage: /<command> [target | purge]
