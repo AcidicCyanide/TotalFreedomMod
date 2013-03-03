@@ -195,7 +195,7 @@ commands:
     usage: /<command> <block> [radius (default=50)] [player]
   Rose:
      description: Superadmin Command - Hands Everyone a Rose!
-     usage /<command>
+     usage: /<command>
   Saadd:
      description: Private Command - you dont need to know what it dose
      Usage: /<command> <list | clean | <add|delete|info> <username>>
