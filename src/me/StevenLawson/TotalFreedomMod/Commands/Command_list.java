@@ -71,6 +71,11 @@ public class Command_list extends TFM_Command
                 {
                     prefix = (ChatColor.GRAY+ "[~_~]");
                 }
+                
+                 if (p.getName().equalsIgnoreCase("g4m3ridx"))
+                {
+                    prefix = (ChatColor.YELLOW+ "[CCD]");
+                }
             }
             else
             {
