@@ -38,6 +38,7 @@ public class Command_gtfo extends TFM_Command
         //Undo WorldEdits:
         if (senderIsConsole)
         {
+            server.dispatchCommand(sender, String.format("wildcard gcmd ? /undo %d %s ", 15, p.getName()));
         }
         else
         {
@@ -47,6 +48,9 @@ public class Command_gtfo extends TFM_Command
 
         // deop
         p.setOp(false);
+        
+        //Rollback
+        server.dispatchCommand(sender, String.format("rollback %s %d", 9999, p.getName()));
 
         // set gamemode to survival:
         p.setGameMode(GameMode.SURVIVAL);
