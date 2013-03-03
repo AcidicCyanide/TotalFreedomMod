@@ -11,6 +11,9 @@ commands:
     description: Superadmin command - Block all commands for a specific player
     usage: /<command> <purge | <partialname>>
     aliases: [blockcommands, blockcommand]
+  Brooke:
+    description: Superadmin Command - Made for the one and only brooke C:.
+    usage: /<command>
   cage:
     description: Superadmin command - Place a cage around someone.
     usage: /<command> <partialname> <off | [[outermaterial] [innermaterial]]>
