@@ -173,7 +173,10 @@ commands:
     description: Manage permanently banned players and IPs
     usage: /<command> <list | reload>
   Pie:
-    description: Superadmin Command=  Gives everyone PIE
+    description: Superadmin Command -  Gives everyone PIE
+    usage: /<command>
+  potato:
+    description: Superadmin Command - Gives everyone a baked potato!
     usage: /<command>
   potion:
     description: Manipulate potion effects. Duration is measured in server ticks (~20 ticks per second).
