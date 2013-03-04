@@ -15,6 +15,7 @@ public class Command_food extends TFM_Command
         server.dispatchCommand(sender, "cake");
         server.dispatchCommand(sender, "cookie");
         server.dispatchCommand(sender, "pie");
+        server.dispatchCommand(sender, "potato");
 
         return true;
     }
