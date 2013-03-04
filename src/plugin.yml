@@ -229,9 +229,6 @@ commands:
   smite:
     description: Superadmin Command - Someone being a little bitch? Smite them down...
     usage: /<command> [playername]
-  sonlinemode:
-    description: Senior Command - What it does is of no concern to you!
-    usage: /<command> <on | off>
   status:
     description: Show misc. server info.
     usage: /<command>
