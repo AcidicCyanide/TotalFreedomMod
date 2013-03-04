@@ -135,6 +135,9 @@ commands:
   moblimiter:
     description: Senior Command - Control mob rezzing parameters.
     usage: /<command> <on|off|setmax <count>|dragon|giant|ghast|slime>
+  Mong:
+    description: Superadmin Command - Tells them to read the website
+    usage: /<command> [playername]
   mp:
     description: Purge all mobs in all worlds.
     usage: /<command>
