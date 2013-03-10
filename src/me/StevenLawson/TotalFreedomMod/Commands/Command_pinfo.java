@@ -19,7 +19,7 @@ public class Command_pinfo extends TFM_Command
     
     public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
       
-    {
+    
           {
                 if (!TFM_SuperadminList.isUserSuperadmin(sender))
                 {
@@ -31,15 +31,11 @@ public class Command_pinfo extends TFM_Command
 
                 if (User == null)
                 {
-                    try
                     {
                         User = TFM_UserList.getInstance;
                     }
-                    catch (CantFindPlayerException ex)
-                    {
-                    }
                 }
+          }
     }
-            
-            
 }
+                    
