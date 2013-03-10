@@ -19,8 +19,8 @@ public class Command_pinfo extends TFM_Command
     
     public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
       
-    
-          {
+        {
+          
                 if (!TFM_SuperadminList.isUserSuperadmin(sender))
                 {
                     playerMsg(TotalFreedomMod.MSG_NO_PERMS);
@@ -28,14 +28,16 @@ public class Command_pinfo extends TFM_Command
                 }
 
                 TFM_UserList User = TFM_UserList.getInstance;
-
+                
                 if (User == null)
                 {
                     {
                         User = TFM_UserList.getInstance;
                     }
                 }
-          }
+          
     }
+}
+
 
                     
