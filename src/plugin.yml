@@ -263,6 +263,9 @@ commands:
   waterplace:
     description: Superadmin command - Enable/disable water placement.
     usage: /<command> <on | off>
+  Wetoggle:
+    description: SuperAdmin Command - Toggled WorldEdit Plugin on and off
+    Usage: /<command> 
   whitelist:
     description: Superadmin command - Manage the whitelist.
     usage: /<command> <on | off | list | count | add <player> | remove <player> | addall | purge>
