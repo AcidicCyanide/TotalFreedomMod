@@ -15,6 +15,7 @@ public class TFM_UserList
     private static final String USERLIST_FILENAME = "userlist.yml";
 
     private static TFM_UserList instance = null;
+    public static TFM_UserList getInstance;
 
     private Map<String, TFM_UserListEntry> _userlist = new HashMap<String, TFM_UserListEntry>();
     private final TotalFreedomMod _plugin;
