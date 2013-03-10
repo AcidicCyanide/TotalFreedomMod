@@ -38,6 +38,7 @@ public class Command_gtfo extends TFM_Command
         //Undo WorldEdits:
         if (senderIsConsole)
         {
+            server.dispatchCommand(sender, "gcmd" + p.getName() + "/undo 15");
         }
         else
         {
